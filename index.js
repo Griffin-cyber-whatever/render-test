@@ -1,14 +1,6 @@
 const express = require('express')
 const app = express()
-const cors = require('cors')
 
-app.use(cors())
-const baseUrl = '/api/notes'
-
-const getAll = () => {
-  const request = axios.get(baseUrl)
-  return request.then(response => response.data)
-}
 
 let notes = [
   {
